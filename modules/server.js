@@ -15,6 +15,9 @@ function start() {
         case '/start':
             handlers.welcome(request, response);
             break;
+        case '/css/style.css':
+            handlers.css(request, response);
+            break;
         case '/upload':
             handlers.upload(request, response);
             break;

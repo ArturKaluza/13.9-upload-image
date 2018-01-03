@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: grey;
+}
+
+.container {
+  max-width: 800px;
+  margin: 60px auto 0;
+}
+
+.container h1 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.container form {
+  text-align: center;
+}
+
+.container form label {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.container form input {
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+}
+
+[type="submit"] {
+  border: 2px solid black;
+  border-radius: 12px;
+  background: orange;
+  font-size: 20px;
+  transition: 0.2s ease-in;
+}
+
+[type="submit"]:hover {
+  background: orangered;
+}

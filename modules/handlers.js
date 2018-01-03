@@ -10,6 +10,16 @@ exports.welcome = function(request, response) {
   });
 }
 
+exports.css = function(request, response) {
+  console.log('wczytuje css');
+  fs.readFile('css/style.css', function(err, css) {
+    response.writeHead(200, {"Content-Type": "text/css; charset=utf-8"});
+    response.write(css);
+    response.end();
+  })
+}
+
+
 exports.upload = function(request, response) {
   console.log("Rozpoczynam obsługę żądania upload.");
   var form = new formidable.IncomingForm();
